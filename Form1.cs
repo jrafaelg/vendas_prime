@@ -52,5 +52,11 @@ namespace vendas_prime
             FrmCadastraProduto frm = new FrmCadastraProduto();
             frm.ShowDialog();
         }
+
+        private void listarProdToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListarProdutos frm = new FrmListarProdutos();
+            frm.ShowDialog();
+        }
     }
 }

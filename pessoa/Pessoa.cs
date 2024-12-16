@@ -1,6 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace vendas_prime
 {
@@ -47,7 +47,6 @@ namespace vendas_prime
         {
             try
             {
-                //string insert = $"insert into pessoas values ('','{this.nome}','{this.cpf}')";
 
                 string sql = $"UPDATE pessoas SET nome='{this.nome}',cpf='{this.cpf}' WHERE  id={this.id};";
                 MySqlCommand ComandoSQL = conn.CreateCommand();

@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace vendas_prime.produto
 {
@@ -50,13 +42,13 @@ namespace vendas_prime.produto
 
             var id = this.id;
             var nome = txtNome.Text;
-            var preco = Convert.ToDecimal(txtPreco.Text) ;
+            var preco = Convert.ToDecimal(txtPreco.Text);
             int? estoque = Convert.ToInt16(txtEstoque.Text);
 
             estoque = estoque ?? 0;
 
 
-            if (nome != "" && preco != 0 )
+            if (nome != "" && preco != 0)
             {
 
                 try

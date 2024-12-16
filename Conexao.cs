@@ -1,5 +1,5 @@
-﻿using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace vendas_prime
 {
@@ -27,7 +27,7 @@ namespace vendas_prime
             {
                 var str = $"server={this.server}; uid={this.uid}; database={this.database}; password={this.password}";
                 conn = new MySqlConnection(str);
-                conn.Open();                
+                conn.Open();
             }
             catch (MySqlException ex)
             {

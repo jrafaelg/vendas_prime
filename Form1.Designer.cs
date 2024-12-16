@@ -38,9 +38,9 @@
             this.listarFuncionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarProdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,14 +77,14 @@
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastrarToolStripMenuItem.Text = "cadastrar";
             this.cadastrarToolStripMenuItem.Click += new System.EventHandler(this.cadastrarToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listarToolStripMenuItem.Text = "listar";
             this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
             // 
@@ -116,7 +116,7 @@
             // 
             this.listarProdutoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarProdutoToolStripMenuItem,
-            this.listarToolStripMenuItem1});
+            this.listarProdToolStripMenuItem});
             this.listarProdutoToolStripMenuItem.Name = "listarProdutoToolStripMenuItem";
             this.listarProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listarProdutoToolStripMenuItem.Text = "produto";
@@ -127,6 +127,13 @@
             this.cadastrarProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastrarProdutoToolStripMenuItem.Text = "cadastrar";
             this.cadastrarProdutoToolStripMenuItem.Click += new System.EventHandler(this.cadastrarProdutoToolStripMenuItem_Click);
+            // 
+            // listarProdToolStripMenuItem
+            // 
+            this.listarProdToolStripMenuItem.Name = "listarProdToolStripMenuItem";
+            this.listarProdToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listarProdToolStripMenuItem.Text = "listar";
+            this.listarProdToolStripMenuItem.Click += new System.EventHandler(this.listarProdToolStripMenuItem_Click);
             // 
             // vendaToolStripMenuItem
             // 
@@ -139,14 +146,8 @@
             // cadastrarToolStripMenuItem3
             // 
             this.cadastrarToolStripMenuItem3.Name = "cadastrarToolStripMenuItem3";
-            this.cadastrarToolStripMenuItem3.Size = new System.Drawing.Size(122, 22);
+            this.cadastrarToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.cadastrarToolStripMenuItem3.Text = "cadastrar";
-            // 
-            // listarToolStripMenuItem1
-            // 
-            this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
-            this.listarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.listarToolStripMenuItem1.Text = "listar";
             // 
             // Form1
             // 
@@ -179,7 +180,7 @@
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarFuncionarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem listarProdToolStripMenuItem;
     }
 }
 

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
 
 namespace vendas_prime.produto
@@ -20,7 +16,7 @@ namespace vendas_prime.produto
 
         public Produto() { }
 
-        public Produto( string nome, decimal preco, int? estoque)
+        public Produto(string nome, decimal preco, int? estoque)
         {
             this.nome = nome;
             this.preco = preco;
@@ -40,7 +36,7 @@ namespace vendas_prime.produto
         {
             try
             {
-                
+
                 string sql = $"insert into produtos values ('{this.id}', '{this.nome}', '{this.preco.ToString().Replace(',', '.')}', '{this.estoque}')";
                 MySqlCommand ComandoSQL = conn.CreateCommand();
                 ComandoSQL.CommandText = sql;
@@ -113,7 +109,7 @@ namespace vendas_prime.produto
                 var conn = conectaBD.RealizaConexao();
 
                 var sql = new MySqlCommand(
-                    $"SELECT p.id, p.nome, p.preco, c.estoque FROM produtos p where p.id = {id}",
+                    $"SELECT p.id, p.nome, p.preco, p.estoque FROM produtos p where p.id = {id}",
                     conn
                     );
                 var exec = sql.ExecuteReader();
