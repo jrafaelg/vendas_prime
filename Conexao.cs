@@ -1,5 +1,5 @@
-﻿using MySql.Data.MySqlClient;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace vendas_prime
 {
@@ -15,7 +15,7 @@ namespace vendas_prime
         {
             this.server = "localhost";
             this.uid = "root";
-            this.password = "";
+            this.password = "123456";
             this.database = "vendas_ifsp";
         }
 
